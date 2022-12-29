@@ -12,14 +12,14 @@ app.get("/", (req, res) => {
     let pos = []
     pos[0] = {
         name: "origin",
-        lat: Math.random() * (55 - 31) + 31,
-        lng: Math.random() * (94 - 71) + 71,
+        lat: Math.random() * (55 - 51) + 51,
+        lng: Math.random() * (94 - 91) + 91,
     }
     for (let i = 0; i < 2; i++) {
         pos[i + 1] = {
             name: i + 1,
-            lat: Math.random() * (65 - 31) + 31,
-            lng: Math.random() * (95 - 71) + 71,
+            lat: Math.random() * (55 - 51) + 51,
+            lng: Math.random() * (95 - 91) + 91,
         }
     }
     pos.push(pos[0])
